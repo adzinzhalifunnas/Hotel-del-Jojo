@@ -30,4 +30,5 @@ Berikut adalah harga dari kamar-kamar yang kami punya:
         <td>⍹1,250,000</td>
     </tr>
 </table>
+
 Selamat menginap!
