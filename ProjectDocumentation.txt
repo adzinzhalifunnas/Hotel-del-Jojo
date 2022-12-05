@@ -1,0 +1,59 @@
+2602063144 - Adzin Zhalifunnas
+Project Documentation
+
+1.
+    1.1. Create folder "Hotel del Jojo"
+        Adzins-MacBook-Pro:~ dzin$ mkdir "Hotel del Jojo
+    1.2. Open folder "Hotel del Jojo"
+        Adzins-MacBook-Pro:~ dzin$ cd "Hotel del Jojo"
+    1.3. Create file "README.md" with title "Hotel del Jojo"
+        Adzins-MacBook-Pro:Hotel del Jojo dzin$ echo "# Hotel-del-Jojo" >> README.md
+    1.4. Edit README.md according to the conditions
+    1.5. Connect to github and push project
+        Adzins-MacBook-Pro:Hotel del Jojo dzin$ git init
+        Adzins-MacBook-Pro:Hotel del Jojo dzin$ git add README.md
+        Adzins-MacBook-Pro:Hotel del Jojo dzin$ git commit -m "Add file README.md to Hotel del Jojo"
+        Adzins-MacBook-Pro:Hotel del Jojo dzin$ git branch -M main
+        Adzins-MacBook-Pro:Hotel del Jojo dzin$ git remote add origin https://github.com/adzinzhalifunnas/Hotel-del-Jojo.git
+        Adzins-MacBook-Pro:Hotel del Jojo dzin$ git push -u origin main
+
+2.
+    2.1. Create folder "hotel-del-jojo"
+        Adzins-MacBook-Pro:Hotel del Jojo dzin$ mkdir hotel-del-jojo
+    2.2. Create folder "asisten" in folder "hotel-del-jojo"
+        Adzins-MacBook-Pro:Hotel del Jojo dzin$ mkdir hotel-del-jojo/asisten
+    2.3. Create file "asisten.txt" in folder "hotel-del-jojo/asisten"
+        Adzins-MacBook-Pro:Hotel del Jojo dzin$ touch hotel-del-jojo/asisten/asisten.txt
+    2.4. Create folder "manager" in folder "hotel-del-jojo"
+        Adzins-MacBook-Pro:Hotel del Jojo dzin$ mkdir hotel-del-jojo/manager
+    2.5. Create file "data-manager.txt" in folder "hotel-del-jojo/manager"
+        Adzins-MacBook-Pro:Hotel del Jojo dzin$ touch hotel-del-jojo/asisten/data-manager.txt
+    2.6. View "hotel-del-jojo" with tree
+        Adzins-MacBook-Pro:Hotel del Jojo dzin$ tree hotel-del-jojo
+
+3.
+    3.1. Create folder "bos"
+        Adzins-MacBook-Pro:Hotel del Jojo dzin$ mkdir bos
+    3.2. a. Move folder "bos" to folder "hotel-del-jojo"
+            Adzins-MacBook-Pro:Hotel del Jojo dzin$ mv bos hotel-del-jojo
+            Adzins-MacBook-Pro:Hotel del Jojo dzin$ tree hotel-del-jojo
+         b. Create file "bos.txt" with content "Jojo Man Wol" in folder "bos"
+            Adzins-MacBook-Pro:Hotel del Jojo dzin$ touch hotel-del-jojo/bos/bos.txt
+            Adzins-MacBook-Pro:Hotel del Jojo dzin$ vim hotel-del-jojo/bos/bos.txt
+         c. Rename file "data-manager.txt" to "manager.txt"
+            Adzins-MacBook-Pro:Hotel del Jojo dzin$ mv hotel-del-jojo/manager/data-manager.txt hotel-del-jojo/manager/manager.txt
+         d. Push repository to GitHub
+            Adzins-MacBook-Pro:Hotel del Jojo dzin$ git add .
+            Adzins-MacBook-Pro:Hotel del Jojo dzin$ git commit -m "Create folder hotel-del-jojo and create folder asisten with file asisten.txt, create folder bos with file bos.txt, and create folder manager with file manager.txt in folder hotel-del-jojo"
+            Adzins-MacBook-Pro:Hotel del Jojo dzin$ git push -u origin main
+         e. Delete folder "manager" and its content
+            Adzins-MacBook-Pro:Hotel del Jojo dzin$ rm -rf hotel-del-jojo/manager
+         f. Push repository to GitHub
+            Adzins-MacBook-Pro:Hotel del Jojo dzin$ git add .
+            Adzins-MacBook-Pro:Hotel del Jojo dzin$ git commit -m "Remove folder manager in folder hotel-del-jojo"
+            Adzins-MacBook-Pro:Hotel del Jojo dzin$ git push -u origin main
+
+4.
+    4.1. Restore folder "manager" with revert commit
+         Adzins-MacBook-Pro:Hotel del Jojo dzin$ git revert f7bec47a92f946ddc8eadaeb85ef3838ea3a0f0c
+         Adzins-MacBook-Pro:Hotel del Jojo dzin$ git push -u origin main

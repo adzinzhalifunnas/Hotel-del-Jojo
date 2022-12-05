@@ -1,0 +1,40 @@
+2602063144 - Adzin Zhalifunnas
+Linux Commands
+
+1.
+mkdir "Hotel del Jojo
+cd "Hotel del Jojo"
+echo "# Hotel-del-Jojo" >> README.md
+git init
+git add README.md
+git commit -m "Add file README.md to Hotel del Jojo"
+git branch -M main
+git remote add origin https://github.com/adzinzhalifunnas/Hotel-del-Jojo.git
+git push -u origin main
+
+2.
+mkdir hotel-del-jojo
+mkdir hotel-del-jojo/asisten
+touch hotel-del-jojo/asisten/asisten.txt
+mkdir hotel-del-jojo/manager
+touch hotel-del-jojo/asisten/data-manager.txt
+tree hotel-del-jojo
+
+3.
+mkdir bos
+mv bos hotel-del-jojo
+tree hotel-del-jojo
+touch hotel-del-jojo/bos/bos.txt
+vim hotel-del-jojo/bos/bos.txt
+mv hotel-del-jojo/manager/data-manager.txt hotel-del-jojo/manager/manager.txt
+git add .
+git commit -m "Create folder hotel-del-jojo and create folder asisten with file asisten.txt, create folder bos with file bos.txt, and create folder manager with file manager.txt in folder hotel-del-jojo"
+git push -u origin main
+rm -rf hotel-del-jojo/manager
+git add .
+git commit -m "Remove folder manager in folder hotel-del-jojo"
+git push -u origin main
+
+4.
+git revert f7bec47a92f946ddc8eadaeb85ef3838ea3a0f0c
+git push -u origin main
